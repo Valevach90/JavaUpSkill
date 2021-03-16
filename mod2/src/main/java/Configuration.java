@@ -40,20 +40,19 @@ public class Configuration {
         return files;
     }
 
-    public boolean checkTheFiles() {
-        List<FileInfo> fileInfo = new ArrayList<>(getFiles());
+    public boolean checkTheFiles(List<File> files) {
         for (FileInfo file : files) {
-            for (int i = 0; i < fileInfo.size(); i++) {
-                if (file.getFileName().equals(fileInfo.get(i).getFileName())) {
+            for(int i = 0;i<files.size();i++){
+                if (file.getFileName().equals(files.get(i).getName())){
                     return true;
-                } else {
+                } else{
                     return false;
                 }
             }
         }
+
         return false;
     }
-
 
 
     public String getSuffix() {
