@@ -38,44 +38,41 @@ public class Configuration {
         files.add(file1);
         files.add(file2);
         files.add(file3);
-        for(int i = 0;i<files.size();i++){
-            if(files.get(i).getName()// я пытаюсь здесь сделать проверку находится ли файл
-            // в системе и если есть то добавить его в новый лист и его вернуть для дальнейшей работы,
-            // хотя это должно быть не в этом методе
-
-
-        }
         return files;
     }
 
-    public boolean checkTheFiles(List<File> files) {
-        for (FileInfo file : files) {
-            for(int i = 0;i<files.size();i++){
-                if (file.getFileName().equals(files.get(i).getName())){
+    public boolean checkTheFiles(List<File> files, Configuration config) {
+        ArrayList <FileInfo> fileInfos = new ArrayList<>(config.getFiles());
+        for (FileInfo file : fileInfos) {
+            for (int i = 0; i < files.size(); i++) {
+                if (file.getFileName().equals(files.get(i).getName())) {
                     return true;
-                } else{
+                } else {
                     return false;
                 }
             }
         }
-
         return false;
     }
 
 
-    public String getSuffix() {
+
+
+
+
+public String getSuffix(){
         return suffix;
-    }
+        }
 
-    public List<FileInfo> getFiles() {
+public List<FileInfo> getFiles(){
         return files;
-    }
+        }
 
-    @Override
-    public String toString() {
-        return "Configuration{" +
-                "suffix='" + suffix + '\'' +
-                ", files=" + files +
-                '}';
-    }
-}
+@Override
+public String toString(){
+        return"Configuration{"+
+        "suffix='"+suffix+'\''+
+        ", files="+files+
+        '}';
+        }
+        }
