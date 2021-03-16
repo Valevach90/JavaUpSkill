@@ -2,7 +2,7 @@ import java.util.List;
 
 public class Root {
     private String name;
-    private List<People> people;
+    private List<MyFiles> files;
 
 
     public String getName() {
@@ -13,19 +13,19 @@ public class Root {
         this.name = name;
     }
 
-    public List<People> getPeople() {
-        return people;
+    public List<MyFiles> getFiles() {
+        return files;
     }
 
-    public void setPeople(List<People> people) {
-        this.people = people;
+    public void setFiles(List<MyFiles> files) {
+        this.files = files;
     }
 
     @Override
     public String toString() {
         return "Root{" +
                 "name='" + name + '\'' +
-                ", people=" + people +
+                ", people=" + files +
                 '}';
     }
 }

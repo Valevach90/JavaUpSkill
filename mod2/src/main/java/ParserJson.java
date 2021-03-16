@@ -1,4 +1,5 @@
 
+import com.google.gson.*;
 import org.json.simple.parser.JSONParser;
 
 
@@ -7,39 +8,50 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
 import java.io.*;
+import java.nio.file.Files;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 public class ParserJson {
-    private static final String TAG_NAME_MAIN = "name";
-    private static final String TAG_PEOPLE = "people";
-    private static final String TAG_NAME = "name";
-    private static final String TAG_AGE = "age";
+    public String oldFileName = null;
+    public String newFileName = null;
 
+    public MyFiles fromJSON() {
+        MyFiles fileName = null;
+        try {
+            File file = new File("src/main/resources/test2.json");
+            FileReader reader = new FileReader(file);
+            Gson gson = new Gson();
+            fileName = gson.fromJson(reader, MyFiles.class);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return fileName;
+    }
 
-    public Root parser() throws ParseException {
-        String suffix = "111";
-        Root root = new Root();
-        JSONParser parser = new JSONParser();
-        try (FileReader read = new FileReader("src/main/resources/test.json")) {
-            JSONObject jObject = (JSONObject) parser.parse(read);
+    public MyFiles renameFile(String rename, MyFiles file) {
+        oldFileName = file.getFileName();
+        newFileName = rename + file.getFileName();
+        file.setFileName(newFileName);
+        return file;
+    }
 
-            JSONArray peopleArray = (JSONArray) jObject.get(TAG_PEOPLE);
-            String newName = null;
-            List<People> peoples = new ArrayList<>();
-            for (Object people : peopleArray) {
-                JSONObject peopleToJSONObject = (JSONObject) people;
-                String peopleName = (String) peopleArray.get(Integer.parseInt((TAG_NAME)));
-                newName = suffix + peopleName;
-                int age = (Integer) jObject.get(TAG_AGE);
-                People newPeople = new People(newName, age);
-                peoples.add(newPeople);
-            }
-            root.setPeople(peoples);
+    public void toJson(MyFiles files) {
+        try {
+            File file = new File("src/main/resources/test2.json");
+            Gson gson = new Gson();
+            FileWriter writer = new FileWriter(file);
+            String toJson = gson.toJson(files);
+            writer.write(toJson);
+            writer.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return root;
     }
 
+    public void printValue() {
+        System.out.println(oldFileName + " > " + newFileName);
+    }
 }
