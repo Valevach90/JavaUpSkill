@@ -1,8 +1,9 @@
+
 {
   "suffix": "Test",
-  "file": [
+  "files": [
     {
-    "fileName": "1.txt"
+      "fileName": "1.txt"
     },
     {
       "fileName": "2.txt"

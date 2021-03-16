@@ -1,6 +1,6 @@
 {
-  "name": "Test file",
-  "files": [
+  "suffix": "Test",
+  "file": [
     {
     "fileName": "1.txt"
     },

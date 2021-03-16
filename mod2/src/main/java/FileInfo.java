@@ -1,18 +1,17 @@
-public class MyFiles {
+public class FileInfo {
     private String fileName;
-
-
-    public String getFileName() {
-        return fileName;
-    }
 
     public void setFileName(String fileName) {
         this.fileName = fileName;
     }
 
+    public String getFileName() {
+        return fileName;
+    }
+
     @Override
     public String toString() {
-        return "People{" +
+        return "FileInfo{" +
                 "fileName='" + fileName + '\'' +
                 '}';
     }

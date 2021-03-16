@@ -1,24 +1,16 @@
+import com.google.gson.Gson;
 
-import com.google.gson.*;
-
-
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.net.URISyntaxException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-/*
-Application should read a config file on the startup
-Then it should ensure that all of files from the config exist
-Then it should rename each file adding a suffix from the config to its name
-It should print the results of the renaming like:
-old_name -> new_name
- */
 
-public class ParserJson {
-    private static final String TAG_SUFFIX = "suffix";
-    private static final String TAG_FILES = "files";
-    private static final String TAG_FILENAME = "fileName";
+public class Configuration {
+    private String suffix;
+    private List<FileInfo> files;
 
     public Configuration fromJSON() throws URISyntaxException {
         Configuration fileName = null;
@@ -48,11 +40,11 @@ public class ParserJson {
         return files;
     }
 
-    public boolean checkTheFiles(List<File> files, Configuration config) {
-        List<FileInfo> fileInfo = new ArrayList<>(config.getFiles());
-        for (File file : files) {
+    public boolean checkTheFiles() {
+        List<FileInfo> fileInfo = new ArrayList<>(getFiles());
+        for (FileInfo file : files) {
             for (int i = 0; i < fileInfo.size(); i++) {
-                if (file.getName().equals(fileInfo.get(i).getFileName())) {
+                if (file.getFileName().equals(fileInfo.get(i).getFileName())) {
                     return true;
                 } else {
                     return false;
@@ -62,8 +54,21 @@ public class ParserJson {
         return false;
     }
 
-    public void addSuffix(Configuration config, List<File> files) {
 
+
+    public String getSuffix() {
+        return suffix;
     }
 
+    public List<FileInfo> getFiles() {
+        return files;
+    }
+
+    @Override
+    public String toString() {
+        return "Configuration{" +
+                "suffix='" + suffix + '\'' +
+                ", files=" + files +
+                '}';
+    }
 }
