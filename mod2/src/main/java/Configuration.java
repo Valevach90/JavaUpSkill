@@ -34,9 +34,15 @@ public class Configuration {
         File file2 = new File("C/2.txt");
         File file3 = new File("C/3.txt");
         List<File> files = new ArrayList<>();
+        List<File> checkedFiles = new ArrayList<>();
         files.add(file1);
         files.add(file2);
         files.add(file3);
+        for(int i = 0;i<files.size();i++){
+            if(files.get(i).getName()// я пытаюсь здесь сделать проверку находится ли файл
+            // в системе и если есть то добавить его в новый лист и его вернуть для дальнейшей работы
+
+        }
         return files;
     }
 
