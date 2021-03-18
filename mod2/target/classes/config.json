@@ -3,13 +3,13 @@
   "suffix": "Test",
   "files": [
     {
-      "fileName": "1.txt"
+      "fileName": "C:/1.txt"
     },
     {
-      "fileName": "2.txt"
+      "fileName": "C:/2.txt"
     },
     {
-      "fileName": "3.txt"
+      "fileName": "C:/3.txt"
     }
   ]
 

@@ -1,3 +1,5 @@
+package org.example;
+
 public class FileInfo {
     private String fileName;
 
@@ -11,7 +13,7 @@ public class FileInfo {
 
     @Override
     public String toString() {
-        return "FileInfo{" +
+        return "org.example.FileInfo{" +
                 "fileName='" + fileName + '\'' +
                 '}';
     }
