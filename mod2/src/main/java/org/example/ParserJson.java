@@ -15,19 +15,18 @@ old_name -> new_name
  */
 
 public class ParserJson {
-    public Configuration fromJSON() throws URISyntaxException {
+
+    public Configuration fromJSON() {
         Configuration fileName = null;
         try {
-            File file = Paths.get(this.getClass()
+            InputStream resourceAsStream = this.getClass()
                     .getClassLoader()
-                    .getResource("config.json")
-                    .toURI())
-                    .toFile();
-            FileReader reader = new FileReader(file);
+                    .getResourceAsStream("config.json");
             Gson gson = new Gson();
+            Reader reader = new InputStreamReader(resourceAsStream, "UTF-8");
             fileName = gson.fromJson(reader, Configuration.class);
 
-        } catch (FileNotFoundException e) {
+        } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
         return fileName;
