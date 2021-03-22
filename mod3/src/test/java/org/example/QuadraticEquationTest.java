@@ -31,14 +31,7 @@ public class QuadraticEquationTest {
         assertEquals(0,value1,0);
         assertEquals(0,value2,0);
     }
-    /*@Test
-    public void whenReturnTypeDouble(){
-        double checkFirstParametor =  QuadraticEquation.enterFirstParametor();
-        double checkSecondParametor = QuadraticEquation.enterSecondParametor();
-        double checkThirdParametor = QuadraticEquation.enterFirstParametor();
-        assertNotEquals(new InputMismatchException(),new InputMismatchException());
 
-    }*/
     @Test
     public void whenFirstParametorEqualsZero(){
         double[] result = quadraticEquation.quadratic(0,3,1);
@@ -56,8 +49,8 @@ public class QuadraticEquationTest {
         double[] result = quadraticEquation.quadratic(1,0,-2);
         double value1 = 1*(result[0]*result[0])+0*result[0]-2;
         double value2 = 1*(result[1]*result[1])+0*result[1]-2;
-        assertEquals(0,value1,0);
-        assertEquals(0,value2,0);
+        assertEquals(0,value1,0.000001);//дельту поменять
+        assertEquals(0,value2,0.000001);
     }
     @Test
     public void whenThirdParametorEqualsZero(){

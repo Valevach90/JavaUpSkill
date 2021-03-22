@@ -52,7 +52,8 @@ public class QuadraticEquation {
         if (firstParametor <= 0) {
             return new double[]{};
         }
-        if (-thirdParametor / firstParametor < 0) {
+        if (secondParametor == 0 && thirdParametor / firstParametor > 0) {
+
             return new double[]{};
         }
         if (discr < 0) {
