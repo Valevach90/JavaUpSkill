@@ -9,7 +9,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class QuadraticEquation {
-    
+
 
     public double[] quadratic(double firstParametor, double secondParametor, double thirdParametor) {
         double discr = Math.pow(secondParametor, 2) - 4 * firstParametor * thirdParametor;
