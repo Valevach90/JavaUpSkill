@@ -18,11 +18,10 @@ public class QuadraticEquationTest {
     }
     @Test
     public void whenDiscrEqualsZero(){
-     double[] result = quadraticEquation.quadratic(9,6,1);
-     double value = result[0];
-     double value2 = result[1];
+        double[] result = quadraticEquation.quadratic(1,2,3);
+        double [] expected = new double[]{};
+        assertArrayEquals(expected,result,0);
 
-     assertEquals(value,value2,0);
     }
     @Test
     public  void whenDiscrTrue(){
@@ -32,14 +31,14 @@ public class QuadraticEquationTest {
         assertEquals(0,value1,0);
         assertEquals(0,value2,0);
     }
-    @Test
+    /*@Test
     public void whenReturnTypeDouble(){
         double checkFirstParametor =  QuadraticEquation.enterFirstParametor();
         double checkSecondParametor = QuadraticEquation.enterSecondParametor();
         double checkThirdParametor = QuadraticEquation.enterFirstParametor();
         assertNotEquals(new InputMismatchException(),new InputMismatchException());
 
-    }
+    }*/
     @Test
     public void whenFirstParametorEqualsZero(){
         double[] result = quadraticEquation.quadratic(0,3,1);
@@ -48,13 +47,17 @@ public class QuadraticEquationTest {
     }
     @Test
     public void whenSecondParametorEqualsZero(){
+        double[] result = quadraticEquation.quadratic(1,0,1);
+        double[] expected =  new double[]{};
+        assertArrayEquals(expected,result,0);
+    }
+    @Test
+    public void whenSecondParametorEqualsZeroSecondExample(){
         double[] result = quadraticEquation.quadratic(1,0,-2);
         double value1 = 1*(result[0]*result[0])+0*result[0]-2;
         double value2 = 1*(result[1]*result[1])+0*result[1]-2;
         assertEquals(0,value1,0);
         assertEquals(0,value2,0);
-        double[] expected =  new double[]{};
-        assertArrayEquals(expected,result,0);
     }
     @Test
     public void whenThirdParametorEqualsZero(){
