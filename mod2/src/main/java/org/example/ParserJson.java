@@ -1,4 +1,4 @@
-package src.main.java.org.example;
+package org.example;
 
 import com.google.gson.*;
 import org.apache.log4j.Logger;
@@ -15,25 +15,26 @@ old_name -> new_name
  */
 
 public class ParserJson {
-        private static final Logger LOGGER = Logger.getLogger(ParserJson.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(ParserJson.class.getName());
 
     public Configuration fromJSON() {
 
         LOGGER.info("method fromJSON is start ");
         Configuration fileName = null;
-        try {
-            InputStream resourceAsStream = this.getClass()
-                    .getClassLoader()
-                    .getResourceAsStream("config.json");
-            LOGGER.info("configuration data is read" );
-            Gson gson = new Gson();
-            Reader reader = new InputStreamReader(resourceAsStream, "UTF-8");
+        Gson gson;
+        Reader reader;
+        try (InputStream resourceAsStream = this.getClass()
+                .getClassLoader()
+                .getResourceAsStream("config.json")) {
+            gson = new Gson();
+            reader = new InputStreamReader(resourceAsStream, "UTF-8");
             fileName = gson.fromJson(reader, Configuration.class);
-
-        } catch (UnsupportedEncodingException e) {
-            LOGGER.error("error has caught",e);
+            LOGGER.info("configuration data is read");
+        } catch (IOException e) {
+            LOGGER.error("error has caught", e);
             e.printStackTrace();
         }
+            
         return fileName;
     }
 }
