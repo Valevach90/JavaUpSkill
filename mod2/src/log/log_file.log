@@ -5,3 +5,10 @@
 2021-03-27 15:26:12 INFO  RenameFiles:19 - files C:/2.txt are not renamed
 2021-03-27 15:26:12 INFO  RenameFiles:19 - files C:/3.txt are not renamed
 2021-03-27 15:26:12 INFO  JSONRunner:14 - Program is end
+2021-03-29 16:06:31 INFO  JSONRunner:11 - Program is running
+2021-03-29 16:06:31 INFO  ParserJson:22 - method fromJSON is start 
+2021-03-29 16:06:31 INFO  ParserJson:28 - configuration data is read
+2021-03-29 16:06:31 INFO  RenameFiles:19 - files C:/1.txt are not renamed
+2021-03-29 16:06:31 INFO  RenameFiles:19 - files C:/2.txt are not renamed
+2021-03-29 16:06:31 INFO  RenameFiles:19 - files C:/3.txt are not renamed
+2021-03-29 16:06:31 INFO  JSONRunner:14 - Program is end
