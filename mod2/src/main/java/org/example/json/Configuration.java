@@ -1,8 +1,8 @@
-package org.example;
+package org.example.json;
 
 import java.util.List;
 
-public class Configuration {
+public class XMLConfiguration {
     private String suffix;
     private List<FileInfo> files;
 
@@ -16,7 +16,7 @@ public class Configuration {
 
     @Override
     public String toString() {
-        return "org.example.Configuration{" +
+        return "org.example.json.Configuration{" +
                 "suffix='" + suffix + '\'' +
                 ", files=" + files +
                 '}';

@@ -34,7 +34,7 @@ public class ParserJson {
             LOGGER.error("error has caught", e);
             e.printStackTrace();
         }
-            
+
         return fileName;
     }
 }

@@ -1,9 +1,9 @@
 package org.example;
 
-
 import org.apache.log4j.Logger;
+import org.example.json.ParserJson;
 
-import static org.example.RenameFiles.renameFiles;
+import static org.example.json.RenameFiles.renameFiles;
 
 public class JSONRunner {
     private static final Logger LOGGER = Logger.getLogger(JSONRunner.class.getName());
