@@ -1,8 +1,10 @@
-package org.example.json;
+package org.example.xml;
+
+import org.example.json.FileInfo;
 
 import java.util.List;
 
-public class Configuration {
+public class XMLConfiguration {
     private String suffix;
     private List<FileInfo> files;
 

@@ -40,3 +40,47 @@
 2021-03-29 19:05:40 INFO  RenameFiles:17 - files are renamed
 2021-03-29 19:05:40 INFO  RenameFiles:17 - files are renamed
 2021-03-29 19:05:40 INFO  JSONRunner:15 - Program is end
+2021-03-31 13:34:37 INFO  XmlParser:22 - method fromJSON is start 
+2021-03-31 13:34:37 ERROR XmlParser:36 - error has caught
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 20; XML version "1.8" is not supported, only XML 1.0 is supported.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:262)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:121)
+	at org.example.xml.XmlParser.fromXML(XmlParser.java:31)
+	at org.example.Runner.main(Runner.java:19)
+2021-03-31 13:35:04 INFO  XmlParser:22 - method fromJSON is start 
+2021-03-31 13:35:04 INFO  XmlParser:34 - configuration data is read
+2021-03-31 13:38:27 INFO  XmlParser:22 - method fromJSON is start 
+2021-03-31 13:38:27 INFO  XmlParser:34 - configuration data is read
+2021-03-31 13:39:45 INFO  XmlParser:22 - method fromJSON is start 
+2021-03-31 13:39:45 INFO  XmlParser:34 - configuration data is read
+2021-03-31 13:42:47 INFO  XmlParser:22 - method fromJSON is start 
+2021-03-31 13:42:47 INFO  XmlParser:34 - configuration data is read
+2021-03-31 13:44:05 INFO  XmlParser:22 - method fromJSON is start 
+2021-03-31 13:44:05 INFO  XmlParser:34 - configuration data is read
+2021-03-31 14:03:26 INFO  XmlParser:22 - method fromJSON is start 
+2021-03-31 14:03:26 INFO  XmlParser:34 - configuration data is read
+2021-03-31 14:03:26 INFO  XmlParser:22 - method fromJSON is start 
+2021-03-31 14:03:26 INFO  XmlParser:34 - configuration data is read
+2021-03-31 14:03:26 INFO  XmlParser:22 - method fromJSON is start 
+2021-03-31 14:03:26 INFO  XmlParser:34 - configuration data is read
+2021-03-31 14:03:55 INFO  XmlParser:22 - method fromJSON is start 
+2021-03-31 14:03:55 INFO  XmlParser:34 - configuration data is read
+2021-03-31 14:04:53 INFO  XmlParser:22 - method fromJSON is start 
+2021-03-31 14:04:53 INFO  XmlParser:34 - configuration data is read
+2021-03-31 14:04:53 INFO  XmlParser:22 - method fromJSON is start 
+2021-03-31 14:04:53 INFO  XmlParser:34 - configuration data is read
+2021-03-31 15:05:08 INFO  Runner:19 - Program is running
+2021-03-31 15:05:08 INFO  ParserJson:21 - method fromJSON is start 
+2021-03-31 15:05:08 INFO  ParserJson:31 - configuration data is read
+2021-03-31 15:05:08 INFO  RenameFiles:17 - files are renamed
+2021-03-31 15:05:08 INFO  RenameFiles:17 - files are renamed
+2021-03-31 15:05:08 INFO  RenameFiles:17 - files are renamed
+2021-03-31 15:05:08 INFO  Runner:22 - Program is end
+2021-03-31 15:05:08 INFO  XmlParser:31 - configuration data is read
+2021-03-31 15:17:36 INFO  XmlParser:33 - configuration data is read
+2021-03-31 15:19:59 INFO  XmlParser:33 - configuration data is read
+2021-03-31 15:23:32 INFO  XmlParser:33 - configuration data is read
+2021-03-31 15:24:02 INFO  XmlParser:33 - configuration data is read
+2021-03-31 15:24:23 INFO  XmlParser:33 - configuration data is read
+2021-03-31 15:24:35 INFO  XmlParser:33 - configuration data is read

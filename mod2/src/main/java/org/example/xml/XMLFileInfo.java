@@ -1,6 +1,6 @@
-package org.example.json;
+package org.example.xml;
 
-public class FileInfo {
+public class XMLFileInfo {
     private String fileName;
 
     public void setFileName(String fileName) {

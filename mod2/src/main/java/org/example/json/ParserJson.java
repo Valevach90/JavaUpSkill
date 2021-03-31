@@ -1,8 +1,7 @@
-package org.example;
+package org.example.json;
 
 import com.google.gson.*;
 import org.apache.log4j.Logger;
-import sun.util.locale.provider.LocaleServiceProviderPool;
 
 
 import java.io.*;

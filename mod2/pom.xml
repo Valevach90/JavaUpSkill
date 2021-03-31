@@ -14,7 +14,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.example.JSONRunner</mainClass>
+                            <mainClass>org.example.Runner</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
