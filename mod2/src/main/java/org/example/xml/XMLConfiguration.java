@@ -1,18 +1,23 @@
 package org.example.xml;
 
-import org.example.json.FileInfo;
+import org.example.configuration.AppConfig;
+import org.example.configuration.ConfigurationReader;
+import org.example.json.JSONFileInfo;
 
+import javax.xml.bind.annotation.XmlAttribute;
 import java.util.List;
 
-public class XMLConfiguration {
+public class XMLConfiguration implements ConfigurationReader {
+    @XmlAttribute(name = "suffix")
     private String suffix;
-    private List<FileInfo> files;
+    @XmlAttribute(name = "files")
+    private List<JSONFileInfo> files;
 
     public String getSuffix() {
         return suffix;
     }
 
-    public List<FileInfo> getFiles() {
+    public List<JSONFileInfo> getFiles() {
         return files;
     }
 
@@ -22,5 +27,10 @@ public class XMLConfiguration {
                 "suffix='" + suffix + '\'' +
                 ", files=" + files +
                 '}';
+    }
+
+    @Override
+    public AppConfig ReadConfiguration() {
+        return null;
     }
 }

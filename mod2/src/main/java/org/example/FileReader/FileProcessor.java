@@ -1,12 +1,15 @@
-package org.example.json;
+package org.example.FileReader;
 
 import org.apache.log4j.Logger;
+import org.example.configuration.AppConfig;
+import org.example.configuration.FileInfo;
 
 import java.io.File;
 
-public class RenameFiles {
-    private static final Logger LOGGER = Logger.getLogger(RenameFiles.class.getName());
-    public static void renameFiles(Configuration config) {
+public class FileProcessor {
+    private boolean withReport;
+    private static final Logger LOGGER = Logger.getLogger(FileProcessor.class.getName());
+    public  void RenameFiles(AppConfig config) {
         for (FileInfo files : config.getFiles()) {
             File oldFile = new File(files.getFileName());
             if (oldFile.exists()) {

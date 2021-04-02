@@ -46,8 +46,8 @@ org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 20; XML version "1.8
 	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:262)
 	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
 	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:121)
-	at org.example.xml.XmlParser.fromXML(XmlParser.java:31)
-	at org.example.Runner.main(Runner.java:19)
+	at org.example.xml.XMLConfigurationReader.fromXML(XmlParser.java:31)
+	at org.example.MyAppRunner.main(Runner.java:19)
 2021-03-31 13:35:04 INFO  XmlParser:22 - method fromJSON is start 
 2021-03-31 13:35:04 INFO  XmlParser:34 - configuration data is read
 2021-03-31 13:38:27 INFO  XmlParser:22 - method fromJSON is start 

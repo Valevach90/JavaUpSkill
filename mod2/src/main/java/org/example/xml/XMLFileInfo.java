@@ -1,20 +1,22 @@
 package org.example.xml;
 
-public class XMLFileInfo {
+import org.example.configuration.FileInfo;
+
+import javax.xml.bind.annotation.XmlAttribute;
+
+public class XMLFileInfo implements FileInfo {
+    @XmlAttribute(name = "fileName")
     private String fileName;
-
-    public void setFileName(String fileName) {
-        this.fileName = fileName;
-    }
-
-    public String getFileName() {
-        return fileName;
-    }
 
     @Override
     public String toString() {
-        return "org.example.json.FileInfo{" +
+        return "XMLFileInfo{" +
                 "fileName='" + fileName + '\'' +
                 '}';
+    }
+
+    @Override
+    public String getFileName() {
+        return null;
     }
 }

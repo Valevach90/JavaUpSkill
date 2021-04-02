@@ -1,6 +1,8 @@
 package org.example.json;
 
-public class FileInfo {
+import org.example.configuration.FileInfo;
+
+public class JSONFileInfo implements FileInfo {
     private String fileName;
 
     public void setFileName(String fileName) {
@@ -13,7 +15,7 @@ public class FileInfo {
 
     @Override
     public String toString() {
-        return "org.example.json.FileInfo{" +
+        return "org.example.configuration.FileInfo{" +
                 "fileName='" + fileName + '\'' +
                 '}';
     }
