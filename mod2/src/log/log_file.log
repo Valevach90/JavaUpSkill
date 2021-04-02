@@ -84,3 +84,6 @@ org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 20; XML version "1.8
 2021-03-31 15:24:02 INFO  XmlParser:33 - configuration data is read
 2021-03-31 15:24:23 INFO  XmlParser:33 - configuration data is read
 2021-03-31 15:24:35 INFO  XmlParser:33 - configuration data is read
+2021-04-02 20:43:25 INFO  JSONConfigurationReader:17 - method fromJSON is start 
+2021-04-02 20:47:20 INFO  JSONConfigurationReader:17 - method fromJSON is start 
+2021-04-02 20:48:09 INFO  JSONConfigurationReader:17 - method fromJSON is start 
