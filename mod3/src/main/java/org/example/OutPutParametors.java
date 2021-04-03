@@ -3,7 +3,7 @@ package org.example;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public  class OunPutParametors {
+public  class OutPutParametors {
     static Scanner inputForQuadratic = new Scanner(System.in);
 
     public static double enterParametor(String massage) {

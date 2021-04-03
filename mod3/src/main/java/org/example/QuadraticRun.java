@@ -1,6 +1,8 @@
 package org.example;
 
-import static org.example.OunPutParametors.*;
+
+import static org.example.OutPutParametors.enterParametor;
+
 
 public class QuadraticRun {
     public static void main(String[] args) {
