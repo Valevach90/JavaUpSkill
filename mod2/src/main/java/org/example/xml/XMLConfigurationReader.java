@@ -1,11 +1,9 @@
 package org.example.xml;
 
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
-import com.google.gson.Gson;
 import org.apache.log4j.Logger;
 import org.example.configuration.AppConfig;
 import org.example.configuration.ConfigurationReader;
-import org.example.json.JSONConfiguration;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,7 +18,7 @@ public class XMLConfigurationReader implements ConfigurationReader {
     public AppConfig ReadConfiguration() {
 
         LOGGER.info("method fromJSON is start ");
-        XMLConfiguration configuration = null;
+        AppConfig configuration = null;
         XmlMapper mapper;
         Reader reader;
         try (InputStream resourceAsStream = this.getClass()
@@ -28,13 +26,13 @@ public class XMLConfigurationReader implements ConfigurationReader {
                 .getResourceAsStream("config.json")) {
             mapper = new XmlMapper();
             reader = new InputStreamReader(resourceAsStream, "UTF-8");
-            configuration = mapper.readValue(reader, XMLConfiguration.class);
+            configuration = (AppConfig) mapper.readValue(reader, XMLConfiguration.class);
             LOGGER.info("configuration data is read");
         } catch (IOException e) {
             LOGGER.error("error has caught", e);
             e.printStackTrace();
         }
 
-        return (AppConfig) configuration;
+        return  configuration;
     }
 }

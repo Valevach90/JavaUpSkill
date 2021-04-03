@@ -7,10 +7,13 @@ import org.example.configuration.FileInfo;
 import java.util.List;
 
 public class JSONConfiguration implements AppConfig {
+    public JSONConfiguration() {
+    }
+
     @JsonProperty("suffix")
     private String suffix;
     @JsonProperty("files")
-    private List<FileInfo> files;
+    private List<FileInfo> files ;
 
     @Override
     public String toString() {
