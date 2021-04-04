@@ -14,7 +14,7 @@ public class RenameFiles {
                 File newFile = new File(newFileName);
                 oldFile.renameTo(newFile);
                 System.out.println(files.getFileName() + " > " + newFileName);
-                LOGGER.info("files are renamed");
+                LOGGER.info("File is exist. Rename started");
             } else {
                 LOGGER.info("files "+files.getFileName()+ " are not renamed");
                 System.out.println("File " + files.getFileName() + " is not found");
