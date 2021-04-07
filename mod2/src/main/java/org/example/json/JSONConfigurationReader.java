@@ -4,9 +4,12 @@ import com.google.gson.*;
 import org.apache.log4j.Logger;
 import org.example.configuration.AppConfig;
 import org.example.configuration.ConfigurationReader;
+import org.example.configuration.FileInfo;
 
 
 import java.io.*;
+
+import static org.example.util.InterfaceSerializerJSON.interfaceSerializer;
 
 
 public class JSONConfigurationReader implements ConfigurationReader {
@@ -16,12 +19,13 @@ public class JSONConfigurationReader implements ConfigurationReader {
 
         LOGGER.info("method fromJSON is start ");
         JSONConfiguration configuration = null;
-        Gson gson;
         Reader reader;
         try (InputStream resourceAsStream = this.getClass()
                 .getClassLoader()
                 .getResourceAsStream("config.json")) {
-            gson = new Gson();
+            Gson gson = new GsonBuilder()
+                    .registerTypeAdapter(FileInfo.class, interfaceSerializer(JSONFileInfo.class))
+                    .create();
             reader = new InputStreamReader(resourceAsStream, "UTF-8");
             configuration = gson.fromJson(reader, JSONConfiguration.class);
             LOGGER.info("configuration data is read");

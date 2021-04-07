@@ -1,5 +1,7 @@
 package org.example.xml;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.xml.XmlFactory;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.apache.log4j.Logger;
 import org.example.configuration.AppConfig;
@@ -17,22 +19,21 @@ public class XMLConfigurationReader implements ConfigurationReader {
     @Override
     public AppConfig ReadConfiguration() {
 
-        LOGGER.info("method fromJSON is start ");
+        LOGGER.info("method ReadConfiguration is start ");
         AppConfig configuration = null;
-        XmlMapper mapper;
         Reader reader;
         try (InputStream resourceAsStream = this.getClass()
                 .getClassLoader()
-                .getResourceAsStream("config.json")) {
-            mapper = new XmlMapper();
+                .getResourceAsStream("config.xml")) {
+            XmlMapper mapper = new XmlMapper();
             reader = new InputStreamReader(resourceAsStream, "UTF-8");
-            configuration = (AppConfig) mapper.readValue(reader, XMLConfiguration.class);
+            configuration =  mapper.readValue(reader, XMLConfiguration.class);
             LOGGER.info("configuration data is read");
         } catch (IOException e) {
             LOGGER.error("error has caught", e);
             e.printStackTrace();
         }
 
-        return  configuration;
+        return configuration;
     }
 }

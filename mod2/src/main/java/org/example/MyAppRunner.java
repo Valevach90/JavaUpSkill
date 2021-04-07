@@ -13,9 +13,9 @@ public class MyAppRunner {
     private static final Logger LOGGER = Logger.getLogger(MyAppRunner.class.getName());
 
     public static void main(String[] args) {
-        ConfigurationReader reader = new JSONConfigurationReader();
-        AppConfig config = reader.ReadConfiguration();
+        ConfigurationReader reader = new XMLConfigurationReader();
         FileProcessor fileProcessor = new FileProcessor();
+        AppConfig config = reader.ReadConfiguration();
         fileProcessor.RenameFiles(config);
 
     }

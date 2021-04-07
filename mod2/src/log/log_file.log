@@ -95,3 +95,765 @@ org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 20; XML version "1.8
 2021-04-02 22:16:38 INFO  JSONConfigurationReader:17 - method fromJSON is start 
 2021-04-02 22:21:25 INFO  JSONConfigurationReader:17 - method fromJSON is start 
 2021-04-02 22:23:25 INFO  JSONConfigurationReader:17 - method fromJSON is start 
+2021-04-04 12:28:07 INFO  JSONConfigurationReader:17 - method fromJSON is start 
+2021-04-05 14:23:15 INFO  JSONConfigurationReader:17 - method fromJSON is start 
+2021-04-07 14:25:28 INFO  JSONConfigurationReader:20 - method fromJSON is start 
+2021-04-07 14:25:28 INFO  JSONConfigurationReader:31 - configuration data is read
+2021-04-07 14:25:28 INFO  FileProcessor:22 - files C:/1.txt are not renamed
+2021-04-07 14:25:28 INFO  FileProcessor:22 - files C:/2.txt are not renamed
+2021-04-07 14:25:28 INFO  FileProcessor:22 - files C:/3.txt are not renamed
+2021-04-07 14:30:18 INFO  XMLConfigurationReader:20 - method fromJSON is start 
+2021-04-07 14:30:18 ERROR XMLConfigurationReader:32 - error has caught
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [2,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:700)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:596)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:29)
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1106)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:29)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [2,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:695)
+	... 6 more
+2021-04-07 14:41:55 INFO  XMLConfigurationReader:20 - method ReadConfiguration is start 
+2021-04-07 14:41:55 ERROR XMLConfigurationReader:32 - error has caught
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [2,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:700)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:596)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:29)
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1106)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:29)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [2,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:695)
+	... 6 more
+2021-04-07 14:41:59 INFO  XMLConfigurationReader:21 - method ReadConfiguration is start 
+2021-04-07 14:42:00 ERROR XMLConfigurationReader:34 - error has caught
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [2,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:700)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:596)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:29)
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1106)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:31)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [2,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:695)
+	... 6 more
+2021-04-07 15:05:07 INFO  XMLConfigurationReader:21 - method ReadConfiguration is start 
+2021-04-07 15:05:08 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [2,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:700)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:596)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:29)
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1106)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [2,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:695)
+	... 6 more
+2021-04-07 15:36:53 INFO  XMLConfigurationReader:21 - method ReadConfiguration is start 
+2021-04-07 15:36:53 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [2,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:700)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:596)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:29)
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1106)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [2,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:695)
+	... 6 more
+2021-04-07 15:37:57 INFO  XMLConfigurationReader:21 - method ReadConfiguration is start 
+2021-04-07 15:37:57 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [2,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:700)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:596)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:29)
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1106)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [2,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:695)
+	... 6 more
+2021-04-07 15:48:08 INFO  XMLConfigurationReader:21 - method ReadConfiguration is start 
+2021-04-07 15:48:09 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "name" (class org.example.xml.XMLConfiguration), not marked as ignorable (2 known properties: "suffix", "files"])
+ at [Source: (InputStreamReader); line: 3, column: 22] (through reference chain: org.example.xml.XMLConfiguration["name"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.dataformat.xml.deser.XmlDeserializationContext.readRootValue(XmlDeserializationContext.java:91)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+2021-04-07 15:49:41 INFO  XMLConfigurationReader:21 - method ReadConfiguration is start 
+2021-04-07 15:49:41 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `org.example.configuration.FileInfo` (no Creators, like default constructor, exist): abstract types either need to be mapped to concrete types, have custom deserializer, or contain additional type information
+ at [Source: (InputStreamReader); line: 6, column: 13] (through reference chain: org.example.xml.XMLConfiguration["files"]->java.util.ArrayList[0])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1764)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1209)
+	at com.fasterxml.jackson.databind.deser.AbstractDeserializer.deserialize(AbstractDeserializer.java:274)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.dataformat.xml.deser.XmlDeserializationContext.readRootValue(XmlDeserializationContext.java:91)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+2021-04-07 15:54:14 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 15:54:14 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `org.example.configuration.FileInfo` (no Creators, like default constructor, exist): abstract types either need to be mapped to concrete types, have custom deserializer, or contain additional type information
+ at [Source: (InputStreamReader); line: 6, column: 13] (through reference chain: org.example.xml.XMLConfiguration["files"]->java.util.ArrayList[0])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1764)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1209)
+	at com.fasterxml.jackson.databind.deser.AbstractDeserializer.deserialize(AbstractDeserializer.java:274)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.dataformat.xml.deser.XmlDeserializationContext.readRootValue(XmlDeserializationContext.java:91)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+2021-04-07 16:09:43 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 16:09:44 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.JsonMappingException: Failed to narrow type [simple type, class java.lang.String] with annotation (value org.example.xml.XMLConfiguration), from 'suffix': Class `org.example.xml.XMLConfiguration` not subtype of `java.lang.String`
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1204)
+	at com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair.refineDeserializationType(AnnotationIntrospectorPair.java:728)
+	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:2390)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:875)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:582)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:277)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:150)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:414)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:591)
+	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4733)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4594)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: java.lang.IllegalArgumentException: Class `org.example.xml.XMLConfiguration` not subtype of `java.lang.String`
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:446)
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:408)
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1201)
+	... 17 more
+2021-04-07 16:10:37 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 16:10:37 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.JsonMappingException: Failed to narrow type [simple type, class java.lang.String] with annotation (value org.example.xml.XMLConfiguration), from 'suffix': Class `org.example.xml.XMLConfiguration` not subtype of `java.lang.String`
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1204)
+	at com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair.refineDeserializationType(AnnotationIntrospectorPair.java:728)
+	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:2390)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:875)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:582)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:277)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:150)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:414)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:591)
+	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4733)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4594)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: java.lang.IllegalArgumentException: Class `org.example.xml.XMLConfiguration` not subtype of `java.lang.String`
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:446)
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:408)
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1201)
+	... 17 more
+2021-04-07 16:11:46 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 16:11:47 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `org.example.configuration.FileInfo` (no Creators, like default constructor, exist): abstract types either need to be mapped to concrete types, have custom deserializer, or contain additional type information
+ at [Source: (InputStreamReader); line: 6, column: 13] (through reference chain: org.example.xml.XMLConfiguration["files"]->java.util.ArrayList[0])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1764)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1209)
+	at com.fasterxml.jackson.databind.deser.AbstractDeserializer.deserialize(AbstractDeserializer.java:274)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.dataformat.xml.deser.XmlDeserializationContext.readRootValue(XmlDeserializationContext.java:91)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+2021-04-07 16:21:27 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 16:21:28 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.JsonMappingException: Failed to narrow type [simple type, class java.lang.String] with annotation (value org.example.xml.XMLConfiguration), from 'suffix': Class `org.example.xml.XMLConfiguration` not subtype of `java.lang.String`
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1204)
+	at com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair.refineDeserializationType(AnnotationIntrospectorPair.java:728)
+	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:2390)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:875)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:582)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:277)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:150)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:414)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:591)
+	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4733)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4594)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: java.lang.IllegalArgumentException: Class `org.example.xml.XMLConfiguration` not subtype of `java.lang.String`
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:446)
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:408)
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1201)
+	... 17 more
+2021-04-07 16:22:39 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 16:22:39 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.JsonMappingException: Failed to narrow type [simple type, class java.lang.String] with annotation (value org.example.xml.XMLConfiguration), from 'suffix': Class `org.example.xml.XMLConfiguration` not subtype of `java.lang.String`
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1204)
+	at com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair.refineDeserializationType(AnnotationIntrospectorPair.java:728)
+	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:2390)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:875)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:582)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:277)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:150)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:414)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:591)
+	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4733)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4594)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: java.lang.IllegalArgumentException: Class `org.example.xml.XMLConfiguration` not subtype of `java.lang.String`
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:446)
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:408)
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1201)
+	... 17 more
+2021-04-07 16:25:38 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 16:25:38 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.JsonMappingException: Failed to narrow value type of [collection type; class java.util.List, contains [simple type, class org.example.configuration.FileInfo]] with concrete-type annotation (value org.example.xml.XMLConfiguration), from 'files': Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1239)
+	at com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair.refineDeserializationType(AnnotationIntrospectorPair.java:728)
+	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:2390)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:875)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:582)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:277)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:150)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:414)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:591)
+	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4733)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4594)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: java.lang.IllegalArgumentException: Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:446)
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:408)
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1235)
+	... 17 more
+2021-04-07 16:26:19 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 16:26:20 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.JsonMappingException: Failed to narrow value type of [collection type; class java.util.List, contains [simple type, class org.example.configuration.FileInfo]] with concrete-type annotation (value org.example.xml.XMLConfiguration), from 'files': Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1239)
+	at com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair.refineDeserializationType(AnnotationIntrospectorPair.java:728)
+	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:2390)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:875)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:582)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:277)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:150)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:414)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:591)
+	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4733)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4594)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: java.lang.IllegalArgumentException: Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:446)
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:408)
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1235)
+	... 17 more
+2021-04-07 16:27:15 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 16:27:16 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.JsonMappingException: Failed to narrow value type of [collection type; class java.util.List, contains [simple type, class org.example.configuration.FileInfo]] with concrete-type annotation (value org.example.xml.XMLConfiguration), from 'files': Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1239)
+	at com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair.refineDeserializationType(AnnotationIntrospectorPair.java:728)
+	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:2390)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:875)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:582)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:277)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:150)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:414)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:591)
+	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4733)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4594)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: java.lang.IllegalArgumentException: Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:446)
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:408)
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1235)
+	... 17 more
+2021-04-07 16:28:06 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 16:28:07 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.JsonMappingException: Failed to narrow value type of [collection type; class java.util.List, contains [simple type, class org.example.configuration.FileInfo]] with concrete-type annotation (value org.example.xml.XMLConfiguration), from 'files': Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1239)
+	at com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair.refineDeserializationType(AnnotationIntrospectorPair.java:728)
+	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:2390)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:875)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:582)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:277)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:150)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:414)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:591)
+	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4733)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4594)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: java.lang.IllegalArgumentException: Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:446)
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:408)
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1235)
+	... 17 more
+2021-04-07 16:33:19 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 16:33:20 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.JsonMappingException: Failed to narrow value type of [collection type; class java.util.List, contains [simple type, class org.example.configuration.FileInfo]] with concrete-type annotation (value org.example.xml.XMLConfiguration), from 'files': Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1239)
+	at com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair.refineDeserializationType(AnnotationIntrospectorPair.java:728)
+	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:2390)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:875)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:582)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:277)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:150)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:414)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:591)
+	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4733)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4594)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: java.lang.IllegalArgumentException: Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:446)
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:408)
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1235)
+	... 17 more
+2021-04-07 16:53:40 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 16:53:40 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.JsonMappingException: Failed to narrow value type of [collection type; class java.util.List, contains [simple type, class org.example.configuration.FileInfo]] with concrete-type annotation (value org.example.configuration.ConfigurationReader), from 'files': Class `org.example.configuration.ConfigurationReader` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1239)
+	at com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair.refineDeserializationType(AnnotationIntrospectorPair.java:728)
+	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:2390)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:875)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:582)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:277)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:150)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:414)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:591)
+	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4733)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4594)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: java.lang.IllegalArgumentException: Class `org.example.configuration.ConfigurationReader` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:446)
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:408)
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1235)
+	... 17 more
+2021-04-07 16:54:19 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 16:54:20 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `org.example.configuration.FileInfo` (no Creators, like default constructor, exist): abstract types either need to be mapped to concrete types, have custom deserializer, or contain additional type information
+ at [Source: (InputStreamReader); line: 6, column: 13] (through reference chain: org.example.xml.XMLConfiguration["files"]->java.util.ArrayList[0])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1764)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1209)
+	at com.fasterxml.jackson.databind.deser.AbstractDeserializer.deserialize(AbstractDeserializer.java:274)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.dataformat.xml.deser.XmlDeserializationContext.readRootValue(XmlDeserializationContext.java:91)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+2021-04-07 16:58:39 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 16:58:39 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.JsonMappingException: Failed to narrow value type of [collection type; class java.util.List, contains [simple type, class org.example.configuration.FileInfo]] with concrete-type annotation (value org.example.xml.XMLConfiguration), from 'files': Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1239)
+	at com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair.refineDeserializationType(AnnotationIntrospectorPair.java:728)
+	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:2390)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:875)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:582)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:277)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:150)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:414)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:591)
+	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4733)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4594)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: java.lang.IllegalArgumentException: Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:446)
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:408)
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1235)
+	... 17 more
+2021-04-07 16:58:54 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 16:58:55 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "fileNema" (class org.example.xml.XMLFileInfo), not marked as ignorable (one known property: "fileName"])
+ at [Source: (InputStreamReader); line: 9, column: 44] (through reference chain: org.example.xml.XMLConfiguration["files"]->java.util.ArrayList[1]->org.example.xml.XMLFileInfo["fileNema"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.dataformat.xml.deser.XmlDeserializationContext.readRootValue(XmlDeserializationContext.java:91)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+2021-04-07 16:59:23 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 16:59:24 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.JsonMappingException: Failed to narrow value type of [collection type; class java.util.List, contains [simple type, class org.example.configuration.FileInfo]] with concrete-type annotation (value org.example.xml.XMLConfiguration), from 'files': Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1239)
+	at com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair.refineDeserializationType(AnnotationIntrospectorPair.java:728)
+	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:2390)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:875)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:582)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:277)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:150)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:414)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:591)
+	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4733)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4594)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: java.lang.IllegalArgumentException: Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:446)
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:408)
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1235)
+	... 17 more
+2021-04-07 17:00:04 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 17:00:04 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.JsonMappingException: Failed to narrow value type of [collection type; class java.util.List, contains [simple type, class org.example.configuration.FileInfo]] with concrete-type annotation (value org.example.xml.XMLConfigurationReader), from 'files': Class `org.example.xml.XMLConfigurationReader` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1239)
+	at com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair.refineDeserializationType(AnnotationIntrospectorPair.java:728)
+	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:2390)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:875)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:582)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:277)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:150)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:414)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:591)
+	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4733)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4594)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: java.lang.IllegalArgumentException: Class `org.example.xml.XMLConfigurationReader` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:446)
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:408)
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1235)
+	... 17 more
+2021-04-07 17:00:37 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 17:00:38 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "fileNema" (class org.example.xml.XMLFileInfo), not marked as ignorable (one known property: "fileName"])
+ at [Source: (InputStreamReader); line: 9, column: 44] (through reference chain: org.example.xml.XMLConfiguration["files"]->java.util.ArrayList[1]->org.example.xml.XMLFileInfo["fileNema"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.dataformat.xml.deser.XmlDeserializationContext.readRootValue(XmlDeserializationContext.java:91)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+2021-04-07 17:01:37 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 17:01:37 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.JsonMappingException: Failed to narrow value type of [collection type; class java.util.List, contains [simple type, class org.example.configuration.FileInfo]] with concrete-type annotation (value java.util.ArrayList), from 'files': Class `java.util.ArrayList` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1239)
+	at com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair.refineDeserializationType(AnnotationIntrospectorPair.java:728)
+	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:2390)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:875)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:582)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:277)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:150)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:414)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:591)
+	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4733)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4594)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: java.lang.IllegalArgumentException: Class `java.util.ArrayList` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:446)
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:408)
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1235)
+	... 17 more
+2021-04-07 17:07:32 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 17:07:33 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.JsonMappingException: Failed to narrow value type of [collection type; class java.util.List, contains [simple type, class org.example.configuration.FileInfo]] with concrete-type annotation (value org.example.xml.XMLConfiguration), from 'files': Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1239)
+	at com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair.refineDeserializationType(AnnotationIntrospectorPair.java:728)
+	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:2390)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:875)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:582)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:277)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:150)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:414)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:591)
+	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4733)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4594)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: java.lang.IllegalArgumentException: Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:446)
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:408)
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1235)
+	... 17 more
+2021-04-07 17:10:16 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 17:10:16 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.JsonMappingException: Failed to narrow value type of [collection type; class java.util.List, contains [simple type, class org.example.configuration.FileInfo]] with concrete-type annotation (value org.example.xml.XMLConfiguration), from 'files': Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1239)
+	at com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair.refineDeserializationType(AnnotationIntrospectorPair.java:728)
+	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:2390)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:875)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:582)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:277)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:150)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:414)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:591)
+	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4733)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4594)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+Caused by: java.lang.IllegalArgumentException: Class `org.example.xml.XMLConfiguration` not subtype of `org.example.configuration.FileInfo`
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:446)
+	at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:408)
+	at com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.refineDeserializationType(JacksonAnnotationIntrospector.java:1235)
+	... 17 more
+2021-04-07 17:11:16 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 17:11:16 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "fileNema" (class org.example.xml.XMLFileInfo), not marked as ignorable (one known property: "fileName"])
+ at [Source: (InputStreamReader); line: 9, column: 44] (through reference chain: org.example.xml.XMLConfiguration["files"]->java.util.ArrayList[1]->org.example.xml.XMLFileInfo["fileNema"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.dataformat.xml.deser.XmlDeserializationContext.readRootValue(XmlDeserializationContext.java:91)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+2021-04-07 17:12:29 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 17:12:29 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "fileNema" (class org.example.xml.XMLFileInfo), not marked as ignorable (one known property: "fileName"])
+ at [Source: (InputStreamReader); line: 9, column: 44] (through reference chain: org.example.xml.XMLConfiguration["files"]->java.util.ArrayList[1]->org.example.xml.XMLFileInfo["fileNema"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.dataformat.xml.deser.XmlDeserializationContext.readRootValue(XmlDeserializationContext.java:91)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+2021-04-07 17:13:33 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 17:13:34 ERROR XMLConfigurationReader:33 - error has caught
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "fileNama" (class org.example.xml.XMLFileInfo), not marked as ignorable (one known property: "fileName"])
+ at [Source: (InputStreamReader); line: 9, column: 44] (through reference chain: org.example.xml.XMLConfiguration["files"]->java.util.ArrayList[1]->org.example.xml.XMLFileInfo["fileNama"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.dataformat.xml.deser.XmlDeserializationContext.readRootValue(XmlDeserializationContext.java:91)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3561)
+	at org.example.xml.XMLConfigurationReader.ReadConfiguration(XMLConfigurationReader.java:30)
+	at org.example.MyAppRunner.main(MyAppRunner.java:17)
+2021-04-07 17:13:49 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 17:13:50 INFO  XMLConfigurationReader:31 - configuration data is read
+2021-04-07 17:15:00 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 17:15:00 INFO  XMLConfigurationReader:31 - configuration data is read
+2021-04-07 17:17:50 INFO  JSONConfigurationReader:20 - method fromJSON is start 
+2021-04-07 17:17:50 INFO  JSONConfigurationReader:31 - configuration data is read
+2021-04-07 17:17:50 INFO  FileProcessor:22 - files C:/1.txt are not renamed
+2021-04-07 17:17:50 INFO  FileProcessor:22 - files C:/2.txt are not renamed
+2021-04-07 17:17:50 INFO  FileProcessor:22 - files C:/3.txt are not renamed
+2021-04-07 17:19:19 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 17:19:20 INFO  XMLConfigurationReader:31 - configuration data is read
+2021-04-07 17:21:37 INFO  JSONConfigurationReader:20 - method fromJSON is start 
+2021-04-07 17:21:38 INFO  JSONConfigurationReader:31 - configuration data is read
+2021-04-07 17:22:04 INFO  FileProcessor:22 - files C:/1.txt are not renamed
+2021-04-07 17:22:04 INFO  FileProcessor:22 - files C:/2.txt are not renamed
+2021-04-07 17:22:04 INFO  FileProcessor:22 - files C:/3.txt are not renamed
+2021-04-07 17:22:24 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 17:22:25 INFO  XMLConfigurationReader:31 - configuration data is read
+2021-04-07 17:25:01 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 17:25:01 INFO  XMLConfigurationReader:31 - configuration data is read
+2021-04-07 17:27:25 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 17:27:26 INFO  XMLConfigurationReader:31 - configuration data is read
+2021-04-07 17:27:26 INFO  FileProcessor:22 - files "C:/1.txt" are not renamed
+2021-04-07 17:27:26 INFO  FileProcessor:22 - files "C:/2.txt" are not renamed
+2021-04-07 17:27:26 INFO  FileProcessor:22 - files "C:/3.txt" are not renamed

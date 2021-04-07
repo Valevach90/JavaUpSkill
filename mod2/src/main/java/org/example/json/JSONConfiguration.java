@@ -9,7 +9,6 @@ import java.util.List;
 public class JSONConfiguration implements AppConfig {
     public JSONConfiguration() {
     }
-
     @JsonProperty("suffix")
     private String suffix;
     @JsonProperty("files")
