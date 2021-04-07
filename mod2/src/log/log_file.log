@@ -857,3 +857,23 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 2021-04-07 17:27:26 INFO  FileProcessor:22 - files "C:/1.txt" are not renamed
 2021-04-07 17:27:26 INFO  FileProcessor:22 - files "C:/2.txt" are not renamed
 2021-04-07 17:27:26 INFO  FileProcessor:22 - files "C:/3.txt" are not renamed
+2021-04-07 21:07:07 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 21:07:08 INFO  XMLConfigurationReader:31 - configuration data is read
+2021-04-07 21:07:08 INFO  FileProcessor:33 - files "C:/1.txt" are not renamed
+2021-04-07 21:07:08 INFO  FileProcessor:33 - files "C:/2.txt" are not renamed
+2021-04-07 21:07:08 INFO  FileProcessor:33 - files "C:/3.txt" are not renamed
+2021-04-07 21:08:18 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 21:08:18 INFO  XMLConfigurationReader:31 - configuration data is read
+2021-04-07 21:08:18 INFO  FileProcessor:33 - files "C:/1.txt" are not renamed
+2021-04-07 21:08:18 INFO  FileProcessor:33 - files "C:/2.txt" are not renamed
+2021-04-07 21:08:18 INFO  FileProcessor:33 - files "C:/3.txt" are not renamed
+2021-04-07 21:10:34 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 21:10:35 INFO  XMLConfigurationReader:31 - configuration data is read
+2021-04-07 21:10:35 INFO  FileProcessor:33 - files "C:/1.txt" are not renamed
+2021-04-07 21:10:35 INFO  FileProcessor:33 - files "C:/2.txt" are not renamed
+2021-04-07 21:10:35 INFO  FileProcessor:33 - files "C:/3.txt" are not renamed
+2021-04-07 21:11:12 INFO  XMLConfigurationReader:22 - method ReadConfiguration is start 
+2021-04-07 21:11:12 INFO  XMLConfigurationReader:31 - configuration data is read
+2021-04-07 21:11:12 INFO  FileProcessor:33 - files "C:/1.txt" are not renamed
+2021-04-07 21:11:12 INFO  FileProcessor:33 - files "C:/2.txt" are not renamed
+2021-04-07 21:11:12 INFO  FileProcessor:33 - files "C:/3.txt" are not renamed

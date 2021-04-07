@@ -4,7 +4,6 @@ import org.apache.log4j.Logger;
 import org.example.FileReader.FileProcessor;
 import org.example.configuration.AppConfig;
 import org.example.configuration.ConfigurationReader;
-import org.example.json.JSONConfigurationReader;
 import org.example.xml.XMLConfigurationReader;
 
 
@@ -16,7 +15,7 @@ public class MyAppRunner {
         ConfigurationReader reader = new XMLConfigurationReader();
         FileProcessor fileProcessor = new FileProcessor();
         AppConfig config = reader.ReadConfiguration();
-        fileProcessor.RenameFiles(config);
+        fileProcessor.renameFiles(config);
 
     }
 }
