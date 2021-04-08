@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.example.FileReader.FileProcessor;
 import org.example.configuration.AppConfig;
 import org.example.configuration.ConfigurationReader;
+import org.example.json.JSONConfigurationReader;
 import org.example.xml.XMLConfigurationReader;
 
 
@@ -12,10 +13,20 @@ public class MyAppRunner {
     private static final Logger LOGGER = Logger.getLogger(MyAppRunner.class.getName());
 
     public static void main(String[] args) {
-        ConfigurationReader reader = new XMLConfigurationReader();
-        FileProcessor fileProcessor = new FileProcessor();
-        AppConfig config = reader.ReadConfiguration();
-        fileProcessor.renameFiles(config);
+        args[0]="XML";
+        ConfigurationReader reader =null;
+        if ("XML".equals(args[0])) {
+            reader = new JSONConfigurationReader();
+        } else if ("JSON".equals(args[0])) {
+            reader = new XMLConfigurationReader();
+        } else {
+            LOGGER.error(" ");
+        }
+        if (reader != null) {
+            AppConfig config = reader.ReadConfiguration();
+            FileProcessor fileProcessor = new FileProcessor();
+            fileProcessor.renameFiles(config);
+        }
 
     }
 }

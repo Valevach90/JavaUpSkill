@@ -17,10 +17,9 @@ public class FileProcessReport {
     public static void generateProcessReport(XMLFileInfoReport report){
         XmlMapper xmlMapper = new XmlMapper();
         try {
-            File file = new File("XMLReport");
+            File file = new File("XMLReport.xml");
+            System.out.println(file.getPath());
             xmlMapper.writeValue(file, new FileProcessReport());
-            FileWriter fr = new FileWriter("XMLReport");
-            fr.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

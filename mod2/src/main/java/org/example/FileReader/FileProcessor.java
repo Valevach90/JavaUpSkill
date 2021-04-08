@@ -13,9 +13,10 @@ import static org.example.report.FileProcessReport.generateProcessReport;
 
 public class FileProcessor {
     private boolean withReport;
-    XMLFileInfoReport report;
     private static final Logger LOGGER = Logger.getLogger(FileProcessor.class.getName());
-    public  void renameFiles(AppConfig config) {
+
+    public void renameFiles(AppConfig config) {
+        XMLFileInfoReport report = new XMLFileInfoReport();
         FileProcessReport fileReport = new FileProcessReport();
         fileReport.setConfigFileName("reportConfig.xml");
         long currentTime = System.currentTimeMillis();
@@ -30,14 +31,18 @@ public class FileProcessor {
                 System.out.println(files.getFileName() + " > " + newFileName);
                 LOGGER.info("files are renamed");
             } else {
-                LOGGER.info("files "+files.getFileName()+ " are not renamed");
+                LOGGER.info("files " + files.getFileName() + " are not renamed");
                 System.out.println("File " + files.getFileName() + " is not found");
             }
         }
-        fileReport.setExecutionTime(System.currentTimeMillis()-currentTime);
-        if(withReport){
+        fileReport.setExecutionTime(System.currentTimeMillis() - currentTime);
+        if (fileReport.getExecutionTime() > 0) {
+            withReport = true;
+        }
+        if (withReport) {
             generateProcessReport(report);
         }
+
     }
 
 
