@@ -12,7 +12,7 @@ public class QuadraticEquationTest {
 
     @Test
     public void whenDiscrEqualsNegative() {
-        double[] result = quadraticEquation.quadratic(16, 8, 1);
+        double[] result = quadraticEquation.quadratic(9, 6, 2);
         double[] expected = new double[]{};
         assertArrayEquals(expected, result, 0);
         assertEquals(expected.length, result.length);
