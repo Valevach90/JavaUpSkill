@@ -4,6 +4,7 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 import javax.xml.bind.annotation.XmlElement;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class FileProcessReport {
@@ -14,12 +15,12 @@ public class FileProcessReport {
     @XmlElement(name = "Files")
     private List<XMLFileInfoReport>files;
 
-    public static void generateProcessReport(XMLFileInfoReport report){
+    public static void generateProcessReport(FileProcessReport report){
         XmlMapper xmlMapper = new XmlMapper();
         try {
             File file = new File("XMLReport.xml");
             System.out.println(file.getPath());
-            xmlMapper.writeValue(file, new FileProcessReport());
+            xmlMapper.writeValue(file, report);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -42,7 +43,7 @@ public class FileProcessReport {
     }
 
     public List<XMLFileInfoReport> getFiles() {
-        return files;
+        return files!=null?files:new ArrayList<XMLFileInfoReport>();
     }
 
     public void setFiles(List<XMLFileInfoReport> files) {

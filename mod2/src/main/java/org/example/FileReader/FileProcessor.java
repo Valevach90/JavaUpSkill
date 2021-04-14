@@ -12,7 +12,7 @@ import java.sql.Time;
 import static org.example.report.FileProcessReport.generateProcessReport;
 
 public class FileProcessor {
-    private boolean withReport;
+    public static boolean withReport;
     private static final Logger LOGGER = Logger.getLogger(FileProcessor.class.getName());
 
     public void renameFiles(AppConfig config) {
@@ -28,6 +28,7 @@ public class FileProcessor {
                 File newFile = new File(newFileName);
                 report.setNewFileName(newFileName);
                 oldFile.renameTo(newFile);
+                fileReport.getFiles().add(report);
                 System.out.println(files.getFileName() + " > " + newFileName);
                 LOGGER.info("files are renamed");
             } else {
@@ -36,11 +37,8 @@ public class FileProcessor {
             }
         }
         fileReport.setExecutionTime(System.currentTimeMillis() - currentTime);
-        if (fileReport.getExecutionTime() > 0) {
-            withReport = true;
-        }
         if (withReport) {
-            generateProcessReport(report);
+            generateProcessReport(fileReport);
         }
 
     }

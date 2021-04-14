@@ -902,3 +902,4 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 2021-04-08 19:59:09 INFO  FileProcessor:34 - files "C:/1.txt" are not renamed
 2021-04-08 19:59:09 INFO  FileProcessor:34 - files "C:/2.txt" are not renamed
 2021-04-08 19:59:09 INFO  FileProcessor:34 - files "C:/3.txt" are not renamed
+2021-04-14 13:58:49 INFO  MyAppRunner:19 - Program is started
