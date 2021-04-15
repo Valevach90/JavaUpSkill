@@ -7,8 +7,7 @@ import org.example.configuration.ConfigurationReader;
 import org.example.json.JSONConfigurationReader;
 import org.example.report.FileProcessReport;
 import org.example.xml.XMLConfigurationReader;
-
-import static org.example.FileReader.FileProcessor.withReport;
+import static org.example.report.GenerateReport.generateProcessReport;
 
 
 public class MyAppRunner {
@@ -17,8 +16,8 @@ public class MyAppRunner {
 
     public static void main(String[] args) {
         LOGGER.info("Program is started");
-        args[0]="XML";
-        ConfigurationReader reader =null;
+        args[0] = "XML";
+        ConfigurationReader reader = null;
         if ("XML".equals(args[0])) {
             reader = new JSONConfigurationReader();
         } else if ("JSON".equals(args[0])) {
@@ -29,8 +28,10 @@ public class MyAppRunner {
         if (reader != null) {
             AppConfig config = reader.ReadConfiguration();
             FileProcessor fileProcessor = new FileProcessor();
-            fileProcessor.renameFiles(config);
-            if(args[1].equals("true")){
+            FileProcessReport XMLFilesForReport = fileProcessor.renameFiles(config);
+
+            if (args[1].equals("true")) {
+                generateProcessReport(XMLFilesForReport);
             }
         }
         LOGGER.info("Program is finished");

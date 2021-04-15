@@ -7,28 +7,24 @@ import org.example.report.XMLFileInfoReport;
 import org.example.configuration.FileInfo;
 
 import java.io.File;
-import java.sql.Time;
-
-import static org.example.report.FileProcessReport.generateProcessReport;
 
 public class FileProcessor {
-    public static boolean withReport;
     private static final Logger LOGGER = Logger.getLogger(FileProcessor.class.getName());
 
-    public void renameFiles(AppConfig config) {
-        XMLFileInfoReport report = new XMLFileInfoReport();
-        FileProcessReport fileReport = new FileProcessReport();
-        fileReport.setConfigFileName("reportConfig.xml");
+    public FileProcessReport renameFiles(AppConfig config) {
+        XMLFileInfoReport XMLReport = new XMLFileInfoReport();
+        FileProcessReport XMLInfoForReport = new FileProcessReport();
+        XMLInfoForReport.setConfigFileName("reportConfig.xml");
         long currentTime = System.currentTimeMillis();
         for (FileInfo files : config.getFiles()) {
             File oldFile = new File(files.getFileName());
             if (oldFile.exists()) {
                 String newFileName = oldFile.getParent() + config.getSuffix() + oldFile.getName();
-                report.setOldFileName(oldFile.getName());
+                XMLReport.setOldFileName(oldFile.getName());
                 File newFile = new File(newFileName);
-                report.setNewFileName(newFileName);
+                XMLReport.setNewFileName(newFileName);
                 oldFile.renameTo(newFile);
-                fileReport.getFiles().add(report);
+                XMLInfoForReport.getFiles().add(XMLReport);
                 System.out.println(files.getFileName() + " > " + newFileName);
                 LOGGER.info("files are renamed");
             } else {
@@ -36,11 +32,8 @@ public class FileProcessor {
                 System.out.println("File " + files.getFileName() + " is not found");
             }
         }
-        fileReport.setExecutionTime(System.currentTimeMillis() - currentTime);
-        if (withReport) {
-            generateProcessReport(fileReport);
-        }
-
+        XMLInfoForReport.setExecutionTime(System.currentTimeMillis() - currentTime);
+        return XMLInfoForReport;
     }
 
 

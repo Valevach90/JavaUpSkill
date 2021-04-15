@@ -2,7 +2,9 @@ package org.example.report;
 
 public class XMLFileInfoReport {
     private String oldFileName;
+    private String newFileName;
     private boolean reported;
+
 
     public boolean isReported() {
         return reported;
@@ -11,8 +13,6 @@ public class XMLFileInfoReport {
     public void setReported(boolean reported) {
         this.reported = reported;
     }
-
-    private String newFileName;
 
 
     public String getOldFileName() {

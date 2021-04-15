@@ -15,16 +15,7 @@ public class FileProcessReport {
     @XmlElement(name = "Files")
     private List<XMLFileInfoReport>files;
 
-    public static void generateProcessReport(FileProcessReport report){
-        XmlMapper xmlMapper = new XmlMapper();
-        try {
-            File file = new File("XMLReport.xml");
-            System.out.println(file.getPath());
-            xmlMapper.writeValue(file, report);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+
 
     public String getConfigFileName() {
         return configFileName;
