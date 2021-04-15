@@ -7,6 +7,7 @@ import org.example.configuration.ConfigurationReader;
 import org.example.json.JSONConfigurationReader;
 import org.example.report.FileProcessReport;
 import org.example.xml.XMLConfigurationReader;
+
 import static org.example.report.GenerateReport.generateProcessReport;
 
 

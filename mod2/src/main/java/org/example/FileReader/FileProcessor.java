@@ -18,9 +18,13 @@ public class FileProcessor {
         long currentTime = System.currentTimeMillis();
         for (FileInfo files : config.getFiles()) {
             File oldFile = new File(files.getFileName());
+            XMLReport.setOldFileName(oldFile.getName());
+            if(!oldFile.exists()){
+                LOGGER.info("Files  not exist");
+                XMLReport.setNewFileName(oldFile.getName());
+            }
             if (oldFile.exists()) {
                 String newFileName = oldFile.getParent() + config.getSuffix() + oldFile.getName();
-                XMLReport.setOldFileName(oldFile.getName());
                 File newFile = new File(newFileName);
                 XMLReport.setNewFileName(newFileName);
                 oldFile.renameTo(newFile);
