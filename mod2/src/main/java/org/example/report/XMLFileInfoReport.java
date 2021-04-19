@@ -29,8 +29,6 @@ public class XMLFileInfoReport {
 
     public void setNewFileName(String newFileName) {
         this.newFileName = newFileName;
-        if(newFileName.equals(oldFileName)){
-            reported=true;
-        }
+
     }
 }
