@@ -1,11 +1,17 @@
-package src.main.java.org.example;
+package org.example;
 
 
-import static src.main.java.org.example.RenameFiles.renameFiles;
+import org.apache.log4j.Logger;
+
+import static org.example.RenameFiles.renameFiles;
 
 public class JSONRunner {
+    private static final Logger LOGGER = Logger.getLogger(JSONRunner.class.getName());
+
     public static void main(String[] args) {
+        LOGGER.info("Program is running");
         ParserJson parse = new ParserJson();
-            renameFiles(parse.fromJSON());
+        renameFiles(parse.fromJSON());
+        LOGGER.info("Program is end");
     }
 }
