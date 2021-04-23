@@ -1,4 +1,4 @@
 package example.coffeeMachine.coffeeMachineSoft;
 
-public class CupOfTea implements Cup {
+public class CupOfTea implements ICup {
 }

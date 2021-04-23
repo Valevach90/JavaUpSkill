@@ -1,5 +1,5 @@
 package example.soft;
 
-public interface CreateReport {
+public interface ICreateReport {
     void doReport();
 }

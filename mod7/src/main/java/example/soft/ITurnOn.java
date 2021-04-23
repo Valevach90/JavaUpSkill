@@ -1,5 +1,5 @@
 package example.soft;
 
-public interface TurnOn {
+public interface ITurnOn {
     void turnOn();
 }

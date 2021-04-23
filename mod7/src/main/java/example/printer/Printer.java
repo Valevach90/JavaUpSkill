@@ -3,11 +3,11 @@ package example.printer;
 import example.printer.printerSoft.IPrinter;
 import example.printer.printerSoft.IReader;
 import example.printer.printerSoft.Paper;
-import example.soft.CreateReport;
-import example.soft.TurnOff;
-import example.soft.TurnOn;
+import example.soft.ICreateReport;
+import example.soft.ITurnOff;
+import example.soft.ITurnOn;
 
-public class Printer implements TurnOff, TurnOn, CreateReport, IPrinter, IReader {
+public class Printer implements ITurnOff, ITurnOn, ICreateReport, IPrinter, IReader {
     private int number;
     private IPrinter printer;
     private IReader reader;

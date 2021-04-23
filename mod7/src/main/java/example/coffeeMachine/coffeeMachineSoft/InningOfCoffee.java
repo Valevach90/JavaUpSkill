@@ -1,7 +1,7 @@
 package example.coffeeMachine.coffeeMachineSoft;
 
-public class InningOfCoffee implements Inning {
-    public Cup doInning() {
+public class InningOfCoffee implements IInning {
+    public ICup doInning() {
         return new CupOfCoffee();
     }
 }

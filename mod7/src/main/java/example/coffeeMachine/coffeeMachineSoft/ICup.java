@@ -1,5 +1,5 @@
 package example.coffeeMachine.coffeeMachineSoft;
 
-public interface Cup {
+public interface ICup {
 
 }

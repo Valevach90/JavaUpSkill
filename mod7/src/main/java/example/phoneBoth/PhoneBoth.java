@@ -1,9 +1,10 @@
 package example.phoneBoth;
 
-import example.soft.TurnOff;
-import example.soft.TurnOn;
+import example.soft.ICreateReport;
+import example.soft.ITurnOff;
+import example.soft.ITurnOn;
 
-public class PhoneBoth implements TurnOff, TurnOn {
+public class PhoneBoth implements ITurnOff, ITurnOn, ICreateReport {
     private int number;
 
     public void turnOff() {
@@ -12,5 +13,9 @@ public class PhoneBoth implements TurnOff, TurnOn {
 
     public void turnOn() {
         System.out.println("PhoneBoth is stopping");
+    }
+
+    public void doReport() {
+        System.out.println("PhoneBoth's number is "+number);
     }
 }
