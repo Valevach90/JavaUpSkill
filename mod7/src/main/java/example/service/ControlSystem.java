@@ -14,7 +14,7 @@ public class ControlSystem implements InteractionDeviceToControlSystem, IStatus 
     }
     public  void showLoggerMessage(Device device){
        if(!showStatus(device)||!addDevice(device)||!removeDevice(device)){
-           throw new RuntimeException(device+" unknown");
+           LOGGER.info(device+" unknown");
        }
     }
 
