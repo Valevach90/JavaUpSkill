@@ -1,8 +1,8 @@
 package example.service;
 
-import example.marcers.Device;
+import example.marcers.IDevice;
 
 public interface IStatus {
-    boolean showStatus(Device device);
-    boolean switchStatus(Device device,boolean switchStatus);
+    boolean showStatus(IDevice device);
+    boolean switchStatus(IDevice device, boolean switchStatus);
 }
