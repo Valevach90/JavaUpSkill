@@ -1,0 +1,28 @@
+@startuml
+abstract class Device
+class ControlService
+class CoffeeMachine
+class Printer
+class TelephoneBoth
+interface IDevice
+interface ICoffee
+interface IColl
+interface IControlService
+interface IPrint
+interface IStatus
+
+
+Device<-Printer
+Device<-CoffeeMachine
+Device<-TelephoneBoth
+IDevice-->Printer
+IDevice-->CoffeeMachine
+IDevice-->TelephoneBoth
+ICoffee-->CoffeeMachine
+IPrint-->Printer
+IColl-->TelephoneBoth
+IStatus-->ControlService
+IControlService-->ControlService
+
+
+@enduml
